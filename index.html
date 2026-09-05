@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Urban Rooftop Restaurant — modern rooftop dining, online ordering and table reservations."
+    >
+
+    <title>Urban Rooftop Restaurant</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="container nav-container">
+
+            <a href="#home" class="brand">
+                <span class="brand-mark">UR</span>
+
+                <span>
+                    <strong>Urban Rooftop</strong>
+                    <small>Restaurant</small>
+                </span>
+            </a>
+
+            <nav class="desktop-nav" aria-label="Main navigation">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#experience">Experience</a>
+                <a href="#reservation">Reservation</a>
+            </nav>
+
+            <div class="nav-actions">
+
+                <button
+                    class="cart-button"
+                    id="openCartBtn"
+                    type="button"
+                    aria-label="Open shopping cart"
+                >
+                    <span>🛒</span>
+                    <span>Cart</span>
+                    <b id="cartCount">0</b>
+                </button>
+
+                <button
+                    class="mobile-menu-button"
+                    id="mobileMenuBtn"
+                    type="button"
+                    aria-label="Open menu"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#experience">Experience</a>
+            <a href="#reservation">Reservation</a>
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-overlay"></div>
+
+            <div class="container hero-content">
+
+                <div class="hero-badge">
+                    ✦ Rooftop Dining · City Views · Crafted Food
+                </div>
+
+                <h1>
+                    Taste the city
+                    <span>from above.</span>
+                </h1>
+
+                <p>
+                    Contemporary food, sunset views and unforgettable
+                    evenings at Urban Rooftop Restaurant.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#menu" class="btn btn-primary">
+                        Explore Menu
+                    </a>
+
+                    <a href="#reservation" class="btn btn-outline">
+                        Reserve a Table
+                    </a>
+
+                </div>
+
+                <div class="hero-stats">
+
+                    <div>
+                        <strong>4.8/5</strong>
+                        <span>Guest Rating</span>
+                    </div>
+
+                    <div>
+                        <strong>25+</strong>
+                        <span>Signature Dishes</span>
+                    </div>
+
+                    <div>
+                        <strong>12 PM</strong>
+                        <span>Open Daily</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+
+        <section class="section about" id="about">
+
+            <div class="container two-column">
+
+                <div class="about-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85"
+                        alt="Urban Rooftop restaurant interior"
+                        loading="lazy"
+                    >
+
+                    <div class="experience-card">
+                        <strong>Since 2021</strong>
+                        <span>Creating memorable evenings</span>
+                    </div>
+
+                </div>
+
+
+                <div class="section-copy">
+
+                    <span class="eyebrow">OUR STORY</span>
+
+                    <h2>
+                        A rooftop made
+                        for good moments.
+                    </h2>
+
+                    <p>
+                        Urban Rooftop brings together modern flavours,
+                        warm hospitality and panoramic city views.
+                    </p>
+
+                    <p>
+                        Whether you're here for a quiet dinner, a birthday,
+                        a date night or simply great food with friends,
+                        every detail is designed to make your evening special.
+                    </p>
+
+                    <div class="feature-list">
+
+                        <div>
+                            <span>✓</span>
+                            <p>Freshly prepared dishes</p>
+                        </div>
+
+                        <div>
+                            <span>✓</span>
+                            <p>Vegetarian & non-vegetarian options</p>
+                        </div>
+
+                        <div>
+                            <span>✓</span>
+                            <p>Rooftop city-view seating</p>
+                        </div>
+
+                    </div>
+
+                    <a href="#menu" class="text-link">
+                        Discover our menu →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MENU -->
+
+        <section class="section menu-section" id="menu">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">OUR MENU</span>
+
+                    <h2>Something for every mood.</h2>
+
+                    <p>
+                        Browse our menu, add your favourites to the cart
+                        and place an order.
+                    </p>
+
+                </div>
+
+
+                <div class="menu-toolbar">
+
+                    <div class="search-box">
+
+                        <span>⌕</span>
+
+                        <input
+                            id="menuSearch"
+                            type="search"
+                            placeholder="Search dishes..."
+                            autocomplete="off"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="category-tabs"
+                    id="categoryTabs"
+                    role="tablist"
+                    aria-label="Menu categories"
+                >
+
+                    <button
+                        class="category-tab active"
+                        type="button"
+                        data-category="all"
+                    >
+                        All
+                    </button>
+
+                    <button
+                        class="category-tab"
+                        type="button"
+                        data-category="starters"
+                    >
+                        Starters
+                    </button>
+
+                    <button
+                        class="category-tab"
+                        type="button"
+                        data-category="pizza"
+                    >
+                        Pizza & Pasta
+                    </button>
+
+                    <button
+                        class="category-tab"
+                        type="button"
+                        data-category="main"
+                    >
+                        Main Course
+                    </button>
+
+                    <button
+                        class="category-tab"
+                        type="button"
+                        data-category="desserts"
+                    >
+                        Desserts
+                    </button>
+
+                    <button
+                        class="category-tab"
+                        type="button"
+                        data-category="drinks"
+                    >
+                        Drinks
+                    </button>
+
+                </div>
+
+
+                <div
+                    class="menu-grid"
+                    id="menuGrid"
+                    aria-live="polite"
+                ></div>
+
+                <div
+                    class="empty-menu"
+                    id="emptyMenu"
+                    hidden
+                >
+                    <span>🍽️</span>
+                    <h3>No dishes found</h3>
+                    <p>Try another search or category.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- EXPERIENCE -->
+
+        <section class="section experience" id="experience">
+
+            <div class="container">
+
+                <div class="experience-content">
+
+                    <span class="eyebrow">THE URBAN EXPERIENCE</span>
+
+                    <h2>
+                        Dinner tastes better
+                        with a view.
+                    </h2>
+
+                    <p>
+                        Come for the food. Stay for the sunset.
+                    </p>
+
+                    <a href="#reservation" class="btn btn-primary">
+                        Plan Your Evening
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- REVIEWS -->
+
+        <section class="section reviews">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">GUESTS LOVE US</span>
+
+                    <h2>Made for memorable evenings.</h2>
+
+                </div>
+
+
+                <div class="review-grid">
+
+                    <article class="review-card">
+                        <div class="stars">★★★★★</div>
+
+                        <p>
+                            "The rooftop atmosphere was incredible.
+                            The pasta and dessert were genuinely excellent."
+                        </p>
+
+                        <strong>Riya S.</strong>
+                    </article>
+
+
+                    <article class="review-card">
+                        <div class="stars">★★★★★</div>
+
+                        <p>
+                            "Perfect place for a date night. Great views,
+                            beautiful ambience and friendly service."
+                        </p>
+
+                        <strong>Aarav M.</strong>
+                    </article>
+
+
+                    <article class="review-card">
+                        <div class="stars">★★★★★</div>
+
+                        <p>
+                            "Loved the food and sunset view.
+                            The online ordering experience was very easy."
+                        </p>
+
+                        <strong>Neha P.</strong>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RESERVATION -->
+
+        <section class="section reservation" id="reservation">
+
+            <div class="container reservation-container">
+
+                <div class="section-heading light">
+
+                    <span class="eyebrow">TABLE RESERVATION</span>
+
+                    <h2>Save your seat.</h2>
+
+                    <p>
+                        Planning a special evening?
+                        Send us a reservation request.
+                    </p>
+
+                </div>
+
+
+                <form id="reservationForm" class="reservation-form">
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="reservationName">
+                                Name
+                            </label>
+
+                            <input
+                                id="reservationName"
+                                type="text"
+                                maxlength="80"
+                                autocomplete="name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="reservationPhone">
+                                Phone
+                            </label>
+
+                            <input
+                                id="reservationPhone"
+                                type="tel"
+                                maxlength="20"
+                                autocomplete="tel"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="reservationDate">
+                                Date
+                            </label>
+
+                            <input
+                                id="reservationDate"
+                                type="date"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="reservationGuests">
+                                Guests
+                            </label>
+
+                            <select id="reservationGuests" required>
+
+                                <option value="">
+                                    Select guests
+                                </option>
+
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                                <option value="5">5 Guests</option>
+                                <option value="6">6 Guests</option>
+                                <option value="7+">7+ Guests</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <button class="btn btn-primary" type="submit">
+                        Request Reservation
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div>
+
+                <a href="#home" class="brand footer-brand">
+
+                    <span class="brand-mark">UR</span>
+
+                    <span>
+                        <strong>Urban Rooftop</strong>
+                        <small>Restaurant</small>
+                    </span>
+
+                </a>
+
+                <p>
+                    Contemporary dining above the city.
+                </p>
+
+            </div>
+
+
+            <div>
+                <h3>Visit</h3>
+
+                <p>
+                    Skyline Avenue<br>
+                    Ahmedabad, Gujarat
+                </p>
+            </div>
+
+
+            <div>
+                <h3>Hours</h3>
+
+                <p>
+                    Monday – Sunday<br>
+                    12:00 PM – 11:30 PM
+                </p>
+            </div>
+
+
+            <div>
+                <h3>Contact</h3>
+
+                <p>
+                    +91 98765 43210<br>
+                    hello@urbanrooftop.com
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Urban Rooftop Restaurant.
+                Portfolio demonstration.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- CART OVERLAY -->
+
+    <div
+        class="cart-overlay"
+        id="cartOverlay"
+        hidden
+    ></div>
+
+
+    <!-- CART -->
+
+    <aside
+        class="cart-drawer"
+        id="cartDrawer"
+        aria-label="Shopping cart"
+        aria-hidden="true"
+    >
+
+        <div class="cart-header">
+
+            <div>
+                <span class="eyebrow">YOUR ORDER</span>
+                <h2>Your Cart</h2>
+            </div>
+
+            <button
+                class="icon-button"
+                id="closeCartBtn"
+                type="button"
+                aria-label="Close cart"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <div class="cart-items" id="cartItems"></div>
+
+
+        <div class="cart-empty" id="cartEmpty">
+
+            <span>🛒</span>
+
+            <h3>Your cart is empty</h3>
+
+            <p>
+                Add some delicious dishes to get started.
+            </p>
+
+            <button
+                class="btn btn-primary"
+                id="browseMenuBtn"
+                type="button"
+            >
+                Browse Menu
+            </button>
+
+        </div>
+
+
+        <div class="cart-summary" id="cartSummary">
+
+            <div>
+                <span>Subtotal</span>
+                <strong id="cartSubtotal">₹0</strong>
+            </div>
+
+            <div>
+                <span>Delivery</span>
+                <strong id="cartDelivery">₹0</strong>
+            </div>
+
+            <div class="cart-total">
+                <span>Total</span>
+                <strong id="cartTotal">₹0</strong>
+            </div>
+
+            <button
+                class="btn btn-primary full-width"
+                id="checkoutBtn"
+                type="button"
+            >
+                Proceed to Checkout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- CHECKOUT -->
+
+    <div
+        class="modal-overlay"
+        id="checkoutModal"
+        hidden
+    >
+
+        <div
+            class="checkout-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="checkoutTitle"
+        >
+
+            <div class="modal-header">
+
+                <div>
+                    <span class="eyebrow">CHECKOUT</span>
+
+                    <h2 id="checkoutTitle">
+                        Complete your order
+                    </h2>
+                </div>
+
+                <button
+                    class="icon-button"
+                    id="closeCheckoutBtn"
+                    type="button"
+                    aria-label="Close checkout"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <form id="checkoutForm">
+
+                <div class="form-group">
+
+                    <label for="customerName">
+                        Full Name
+                    </label>
+
+                    <input
+                        id="customerName"
+                        type="text"
+                        maxlength="80"
+                        autocomplete="name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="customerPhone">
+                        Phone Number
+                    </label>
+
+                    <input
+                        id="customerPhone"
+                        type="tel"
+                        maxlength="20"
+                        autocomplete="tel"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="orderType">
+                        Order Type
+                    </label>
+
+                    <select id="orderType" required>
+
+                        <option value="delivery">
+                            Home Delivery
+                        </option>
+
+                        <option value="pickup">
+                            Pickup at Restaurant
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div
+                    class="form-group"
+                    id="addressGroup"
+                >
+
+                    <label for="customerAddress">
+                        Delivery Address
+                    </label>
+
+                    <textarea
+                        id="customerAddress"
+                        maxlength="300"
+                        autocomplete="street-address"
+                        placeholder="House, street, area..."
+                    ></textarea>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="customerNote">
+                        Special Instructions
+                    </label>
+
+                    <textarea
+                        id="customerNote"
+                        maxlength="300"
+                        placeholder="Optional..."
+                    ></textarea>
+
+                </div>
+
+
+                <div class="checkout-total-box">
+
+                    <span>Payable Total</span>
+
+                    <strong id="checkoutTotal">₹0</strong>
+
+                </div>
+
+
+                <p class="security-note">
+                    🔒 The production server must recalculate
+                    prices and totals before accepting an order.
+                </p>
+
+
+                <button
+                    class="btn btn-primary full-width"
+                    id="placeOrderBtn"
+                    type="submit"
+                >
+                    Place Order
+                </button>
+
+
+                <p
+                    class="form-message"
+                    id="checkoutMessage"
+                    role="status"
+                ></p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- SUCCESS -->
+
+    <div
+        class="modal-overlay"
+        id="successModal"
+        hidden
+    >
+
+        <div class="success-modal">
+
+            <div class="success-icon">✓</div>
+
+            <span class="eyebrow">
+                ORDER RECEIVED
+            </span>
+
+            <h2>Thank you!</h2>
+
+            <p id="successMessage">
+                Your order request has been received.
+            </p>
+
+            <button
+                class="btn btn-primary"
+                id="closeSuccessBtn"
+                type="button"
+            >
+                Continue
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js" defer></script>
+
+</body>
+</html>
